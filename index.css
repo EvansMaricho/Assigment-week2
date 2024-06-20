@@ -41,9 +41,23 @@ a {
   padding: 18px;
   display: flex;
   padding: 10px;
-  bottom: 250px;
+  bottom: 220px;
   position: relative;
   right: 50px;
+}
+
+.content-mobile {
+  display: flex;
+}
+
+.navbar-mobile {
+  display: flex;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  right: 50px;
+  display: none;
+  font-size: medium;
 }
 
 .ul-navbar2 {
@@ -100,4 +114,35 @@ span {
   justify-content: center;
   padding: 20px;
   font-size: x-large;
+}
+
+.container-description {
+  position: relative;
+  height: 40px;
+  bottom: 20px;
+}
+
+.name-product {
+  position: relative;
+  bottom: 20px;
+}
+
+.gambar-product {
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 731px) {
+  .ul-navbar2 {
+    display: none;
+  }
+  .form-container {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  .navbar-mobile {
+    display: contents;
+    display: flex;
+  }
 }
