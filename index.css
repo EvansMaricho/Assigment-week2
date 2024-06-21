@@ -135,8 +135,54 @@ span {
   height: 400px;
 }
 
-.login-form {
-  background-color: aqua;
+.form-login {
+  padding: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: xx-large;
+}
+.Email {
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.Password {
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.button-login {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.forget-password {
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.container-register {
+  display: flex;
+  padding: 20px;
+}
+
+.regist-akun {
+  display: flex;
+  padding: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: xx-large;
+}
+
+.checkbox-agreement {
+  position: relative;
+  left: 20px;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 @media (max-width: 731px) {
@@ -147,6 +193,7 @@ span {
     position: relative;
     top: 10px;
     left: 10px;
+    padding: 90px;
   }
   .navbar-mobile {
     display: contents;
