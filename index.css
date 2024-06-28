@@ -1,9 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+*,
+html {
+  margin: 0;
+  padding: 0%;
+}
+
+.container-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: black;
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  animation-name: pull_over;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-size: 20px;
+  width: 100%;
+}
+
+@keyframes pull_over {
+  from {
+    margin-right: auto;
+  }
+
+  to {
+    margin-left: auto;
+    font-size: 15px;
+  }
+}
 
 body {
   background-color: white;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
   padding-top: 0%;
@@ -15,9 +45,12 @@ body {
   color: black;
   font-size: 20ch;
   justify-content: left;
-  margin-left: 75px;
-  fill: inherit;
-  display: flex;
+  margin-left: 50px;
+  transition: 1s;
+}
+
+.logo-navbar:hover {
+  color: grey;
 }
 
 a {
@@ -25,16 +58,22 @@ a {
   color: black;
 }
 
+.banner-img {
+  width: 100%;
+  height: 80%;
+}
+
 .li-navbar {
   padding: 18px;
   color: black;
   position: relative;
-  bottom: 80px;
-  right: 65px;
+  bottom: 65px;
+  right: 40px;
+  transition: 2s;
 }
 
 .ul-navbar {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 
   font-size: small;
   color: black;
@@ -42,14 +81,14 @@ a {
   display: flex;
   list-style-type: none;
   font-size: medium;
-  margin-left: 105px;
+  margin-left: 90px;
 }
 
 .li-navbar2 {
   padding: 18px;
   display: flex;
   padding: 10px;
-  bottom: 230px;
+  bottom: 200px;
   position: relative;
   right: 50px;
 }
@@ -61,21 +100,22 @@ a {
 .navbar-mobile {
   display: flex;
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   position: relative;
-  right: 50px;
+
   display: none;
   font-size: medium;
 }
 
 .ul-navbar2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: large;
   color: black;
   text-align: right;
   display: flex;
   list-style-type: none;
   justify-content: right;
+  font-size: 25px;
 }
 
 .form-container {
@@ -89,22 +129,115 @@ a {
   gap: 10px;
 }
 
+.container-wraper {
+  width: 100%;
+
+  /* border: 1px solid violet; */
+  margin-top: 20px;
+}
+
+.container-content1 {
+  /* border: 1px solid; */
+  display: grid;
+  gap: 5px;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 1fr 1fr;
+}
+
+.container-content1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-property: filter;
+}
+
+.container-content1 img:hover {
+  filter: sepia(100%);
+  transform: scale(0.99) translate(0%, 0%);
+}
+
+.content1-img {
+  /* border: 1px solid; */
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  object-fit: cover;
+}
+.content2-img {
+  /* border: 1px solid; */
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  object-fit: cover;
+}
+
+.content3-img {
+  /* border: 1px solid; */
+  grid-column-start: 3;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  object-fit: cover;
+}
+
+.content4-img {
+  /* border: 1px solid; */
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  object-fit: cover;
+}
+
+.content5-img {
+  /* border: 1px solid; */
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  object-fit: cover;
+}
+
+.content6-img {
+  /* border: 1px solid; */
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  object-fit: cover;
+}
+
+.content7-img {
+  /* border: 1px solid; */
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  object-fit: cover;
+}
+
 .Cari {
   border: none;
   border-radius: 5px;
   background-color: #ffff;
   width: 300px;
   height: 20px;
+  color: grey;
 }
 
 .submit {
+  font-family: "Bebas Neue", sans-serif;
   border: none;
   border-radius: 5px;
   background-color: #ffff;
-}
-
-main {
-  background-image: none;
 }
 
 .container-shirt {
@@ -137,12 +270,22 @@ span {
   padding: 18px;
 }
 
+.social-media {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: x-large;
+  text-shadow: grey 0 2px;
+}
+
 .ul-footer {
   font-family: "Bebas Neue", sans-serif;
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: x-large;
+  text-shadow: grey 0 2px;
 }
 
 .container-description {

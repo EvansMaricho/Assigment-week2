@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAMZI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="index.css" />
     <meta name="title" content="TAMZI" />
@@ -29,7 +35,13 @@
 
   <body>
     <!-- NAVBAR -->
-    <header>
+    <div class="container-top">
+      <a href="/"
+        ><h1 class="topheader">Pre-Season Available Now | Sale Up To 70%</h1></a
+      >
+    </div>
+
+    <header class="main-header">
       <nav>
         <div class="mobilenavbar">
           <ul class="content-mobile">
@@ -39,7 +51,7 @@
           </ul>
         </div>
 
-        <a class="logo-navbar" href="index.html">TAMZI</a>
+        <div><a class="logo-navbar" href="index.html">TAMZI</a></div>
 
         <div class="HOME">
           <ul class="ul-navbar2">
@@ -67,7 +79,11 @@
       </nav>
       <div class="form-pencarian">
         <form class="form-container" action="get method">
-          <input type="text" class="Cari" placeholder="Search" />
+          <input
+            type="text"
+            class="Cari"
+            placeholder="_________________________________________"
+          />
           <input type="submit" class="submit" value="Submit" />
         </form>
       </div>
@@ -75,17 +91,50 @@
     <!-- NAVBAR END -->
 
     <!-- MAIN CONTENT-->
-    <section>
-      <main>
-        <div class="CONTAINER-BANNER"></div>
-      </main>
-    </section>
+    <main>
+      <section class="banner">
+        <picture>
+          <source media="(min-width:731px)" srcset="Asset/lifestyle3.jpg" />
+
+          <img class="banner-img" src="Asset/srcset2.jpg" alt="banner" />
+        </picture>
+      </section>
+      <section class="container-wraper">
+        <div class="container-content1">
+          <div class="contentimg content1-img">
+            <a href=""> <img src="Asset 2/kimonostyle.jpg" alt="kimono" /></a>
+          </div>
+          <div class="content2-img">
+            <a href=""> <img src="Asset 2/puffer1.jpg" alt="puffer" /></a>
+          </div>
+          <div class="content3-img">
+            <a href=""> <img src="Asset 2/coat.jpg" alt="coat" /></a>
+          </div>
+          <div class="content4-img">
+            <a href=""
+              ><img src="Asset 2/sunglasses1.jpg" alt="sunglasses"
+            /></a>
+          </div>
+          <div class="content5-img">
+            <a href=""><img src="Asset 2/knit.jpg" alt="knit" /></a>
+          </div>
+          <div class="content6-img">
+            <a href=""><img src="Asset 2/blazer1.jpg" alt="blazzer" /></a>
+          </div>
+          <div class="content7-img">
+            <a href=""
+              ><img src="Asset 2/oversizehoodie.jpg" alt="oversizehoodie"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- MAIN CONTENT END -->
 
     <!-- FOOTER -->
     <div>
-      <span class="social media">VISIT US ON</span>
+      <span class="social-media">VISIT US ON</span>
     </div>
     <div>
       <ul class="ul-footer">
