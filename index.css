@@ -1,6 +1,6 @@
 *,
 html {
-  margin: 0;
+  margin: 0%;
   padding: 0%;
 }
 
@@ -12,7 +12,7 @@ html {
   background-color: black;
 }
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct";
   color: white;
   animation-name: pull_over;
   animation-duration: 2s;
@@ -40,13 +40,14 @@ body {
 }
 
 .logo-navbar {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   height: 100%;
   color: black;
   font-size: 20ch;
   justify-content: left;
   margin-left: 50px;
-  transition: 1s;
+  transition-property: all;
+  transition: all 2s;
 }
 
 .logo-navbar:hover {
@@ -64,7 +65,8 @@ a {
 }
 
 .li-navbar {
-  padding: 18px;
+  font-size: x-large;
+  padding: 14px;
   color: black;
   position: relative;
   bottom: 65px;
@@ -73,12 +75,13 @@ a {
 }
 
 .ul-navbar {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
 
   font-size: small;
   color: black;
   text-align: left;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   font-size: medium;
   margin-left: 90px;
@@ -100,7 +103,7 @@ a {
 .navbar-mobile {
   display: flex;
   padding: 10px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   position: relative;
 
   display: none;
@@ -108,7 +111,7 @@ a {
 }
 
 .ul-navbar2 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   font-size: large;
   color: black;
   text-align: right;
@@ -122,11 +125,12 @@ a {
   justify-content: right;
   display: flex;
   padding: 10px;
-  bottom: 190px;
-  position: relative;
-  right: 50px;
+  /* bottom: 190px; */
+  /* position: relative; */
+  /* right: 50px; */
   border: none;
   gap: 10px;
+  width: 90%;
 }
 
 .container-wraper {
@@ -137,7 +141,6 @@ a {
 }
 
 .container-content1 {
-  /* border: 1px solid; */
   display: grid;
   gap: 5px;
   grid-template-columns: auto auto auto auto auto;
@@ -234,7 +237,8 @@ a {
 }
 
 .submit {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
+  font-size: larger;
   border: none;
   border-radius: 5px;
   background-color: #ffff;
@@ -255,7 +259,7 @@ a {
 }
 
 span {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   display: flex;
   position: relative;
   top: 450px;
@@ -271,7 +275,7 @@ span {
 }
 
 .social-media {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -280,23 +284,20 @@ span {
 }
 
 .ul-footer {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   display: flex;
   justify-content: center;
   padding: 20px;
-  font-size: x-large;
+  font-size: large;
   text-shadow: grey 0 2px;
 }
 
 .container-description {
-  position: relative;
   height: 40px;
-  bottom: 20px;
 }
 
 .name-product {
   position: relative;
-  bottom: 20px;
 }
 
 .gambar-product {
@@ -306,18 +307,18 @@ span {
 
 .form-login {
   padding: 20px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   font-size: xx-large;
 }
 .Email {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   margin-bottom: 20px;
   margin-left: 20px;
   width: 200px;
 }
 
 .Password {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   margin-bottom: 20px;
   margin-left: 20px;
   width: 200px;
@@ -329,7 +330,7 @@ span {
 }
 
 .forget-password {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   margin-bottom: 50px;
   margin-left: 20px;
   width: 200px;
@@ -343,7 +344,7 @@ span {
 .regist-akun {
   display: flex;
   padding: 20px;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "fontproduct", sans-serif;
   font-size: xx-large;
 }
 
@@ -355,9 +356,27 @@ span {
 }
 
 @media (max-width: 731px) {
-  .ul-navbar2 {
+  *,
+  html {
+    margin: 0%;
+    padding: 0%;
+  }
+  .logo-navbar {
     display: none;
   }
+
+  .ul-navbar {
+    font-family: "fontproduct", sans-serif;
+    font-size: small;
+    color: black;
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    font-size: medium;
+    margin-left: 35px;
+  }
+
   .form-container {
     position: relative;
     top: 10px;
@@ -367,6 +386,8 @@ span {
   .navbar-mobile {
     display: contents;
     display: flex;
+    font-family: "fontproduct";
+    font-size: larger;
   }
   .form-container {
     justify-content: right;
@@ -378,4 +399,11 @@ span {
     bottom: 250px;
     margin-bottom: 50px;
   }
+}
+
+@font-face {
+  font-family: "fontproduct";
+  src: url(font/BebasNeue-Regular.ttf);
+  font-style: normal;
+  font-weight: 100%;
 }
