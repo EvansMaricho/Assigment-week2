@@ -28,33 +28,37 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <div class="container-top">
-      <a href="/"
-        ><h1 class="topheader">Pre-Season Available Now | Sale Up To 70%</h1></a
-      >
-    </div>
+    
 
     <header class="main-header">
       <nav>
-        <div class="mobilenavbar">
-          <ul class="content-mobile">
-            <li class="navbar-mobile"><a href="index.html">HOME</a></li>
-            <li class="navbar-mobile"><a href="login.html">LOG IN</a></li>
-            <li class="navbar-mobile"><a href="CART">CART</a></li>
-          </ul>
+        <div class="container-top">
+          <a href="/"
+            ><h1 class="topheader">Pre-Season Available Now | Sale Up To 70%</h1></a
+          >
+        </div>
+       <div class="container-menucenter">
+          <div class="hamburger">
+            <ul class="ul-hamburger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+          <div class="container-home">
+            <ul class="ul-navbar2">
+              <li class="li-navbar2"><a href="index.html">HOME</a></li>
+              <li class="li-navbar2"><a href="login.html">LOG IN</a></li>
+              <li class="li-navbar2"><a href="CART">CART</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div><a class="logo-navbar" href="index.html">TAMZI</a></div>
-
-        <div class="HOME">
-          <ul class="ul-navbar2">
-            <li class="li-navbar2"><a href="index.html">HOME</a></li>
-            <li class="li-navbar2"><a href="login.html">LOG IN</a></li>
-            <li class="li-navbar2"><a href="CART">CART</a></li>
-          </ul>
+        <div class="logo-container">
+          <a class="logo-brand" href="index.html">TAMZI</a>
         </div>
-        <div>
+
+
+        <div class="container-menuitem">
           <ul class="ul-navbar">
             <li class="li-navbar">
               <a href="Shirt.html">Shirt</a>
@@ -70,6 +74,7 @@
             </li>
           </ul>
         </div>
+        
       </nav>
       <div class="form-pencarian">
         <form class="form-container" action="get method">
@@ -138,5 +143,17 @@
       </ul>
     </div>
     <!-- FOOTER END -->
+
+    <script src="main.js">
+// document.addEventListener("scroll", () => {
+//   const header = document.querySelector('header');
+//   if (window.scrollY > 0) {
+//     header.classList.add("scrolled");
+//   } else {
+//     header.classList.remove("scrolled");
+//   }
+// });
+
+    </script>
   </body>
 </html>

@@ -4,6 +4,83 @@ html {
   padding: 0%;
 }
 
+.hamburger {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bar1 {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 15px;
+  margin: 4px;
+  transition: 1s;
+  margin-left: 0;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar2 {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px;
+  transition: 1s;
+  margin-left: 0;
+  border-radius: 15px;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 15px;
+  margin: 4px;
+  transition: 1s;
+  margin-left: 0;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar1 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+.hamburger.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger.active .bar3 {
+  transform: translate(0, -8px) rotate(-45deg);
+}
+
+.logo-container {
+  height: 150px;
+}
+
+.logo-brand {
+  font-family: "fontproduct", sans-serif;
+  color: black;
+  font-size: 20ch;
+  justify-content: left;
+  margin-left: 50px;
+  transition-property: all;
+  transition: all 2s;
+}
+.logo-brand:hover {
+  color: grey;
+}
+
+.main-header {
+  width: 100%;
+}
+
 .container-top {
   display: flex;
   justify-content: center;
@@ -21,6 +98,21 @@ h1 {
   width: 100%;
 }
 
+.container-home {
+  width: 100%;
+}
+
+.container-menuitem {
+  width: 100%;
+  margin-left: 50px;
+}
+
+.container-menucenter {
+  display: flex;
+  width: 100%;
+  margin-top: 17px;
+}
+
 @keyframes pull_over {
   from {
     margin-right: auto;
@@ -32,26 +124,35 @@ h1 {
   }
 }
 
+header {
+  position: fixed;
+  z-index: 101;
+
+  background-color: transparent;
+  transition-property: all;
+  transition: 0.4 ease-in-out;
+}
+
+header.scrolled {
+  background-color: #fff;
+  opacity: 0.98;
+  color: black;
+}
+
+header nav a {
+  transition: color 0.4s ease-in-out;
+  background-color: transparent;
+}
+
+header.scrolled nav a {
+  color: black;
+}
+
 body {
   background-color: white;
   width: 100%;
   height: 100vh;
   padding-top: 0%;
-}
-
-.logo-navbar {
-  font-family: "fontproduct", sans-serif;
-  height: 100%;
-  color: black;
-  font-size: 20ch;
-  justify-content: left;
-  margin-left: 50px;
-  transition-property: all;
-  transition: all 2s;
-}
-
-.logo-navbar:hover {
-  color: grey;
 }
 
 a {
@@ -68,32 +169,24 @@ a {
   font-size: x-large;
   padding: 14px;
   color: black;
-  position: relative;
+  /* position: relative;
   bottom: 65px;
-  right: 40px;
+  right: 40px; */
   transition: 2s;
 }
 
 .ul-navbar {
   font-family: "fontproduct", sans-serif;
-
   font-size: small;
   color: black;
   text-align: left;
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
   font-size: medium;
-  margin-left: 90px;
 }
 
 .li-navbar2 {
-  padding: 18px;
   display: flex;
-  padding: 10px;
-  bottom: 200px;
-  position: relative;
-  right: 50px;
 }
 
 .content-mobile {
@@ -117,17 +210,17 @@ a {
   text-align: right;
   display: flex;
   list-style-type: none;
-  justify-content: right;
   font-size: 25px;
+  justify-content: end;
+  gap: 10px;
+  margin-right: 10px;
 }
 
 .form-container {
   justify-content: right;
   display: flex;
   padding: 10px;
-  /* bottom: 190px; */
-  /* position: relative; */
-  /* right: 50px; */
+
   border: none;
   gap: 10px;
   width: 90%;
@@ -136,7 +229,6 @@ a {
 .container-wraper {
   width: 100%;
 
-  /* border: 1px solid violet; */
   margin-top: 20px;
 }
 
@@ -230,7 +322,7 @@ a {
 .Cari {
   border: none;
   border-radius: 5px;
-  background-color: #ffff;
+  background-color: transparent;
   width: 300px;
   height: 20px;
   color: grey;
@@ -241,9 +333,13 @@ a {
   font-size: larger;
   border: none;
   border-radius: 5px;
-  background-color: #ffff;
+  background-color: transparent;
 }
 
+.container-main {
+  position: relative;
+  top: 300px;
+}
 .container-shirt {
   display: flex;
   flex-wrap: wrap;
@@ -255,7 +351,7 @@ a {
   flex-direction: row;
   flex-shrink: unset;
   padding: 10px;
-  border-style: double;
+  border: 1px solid;
 }
 
 span {
@@ -374,22 +470,16 @@ span {
     flex-wrap: nowrap;
     list-style-type: none;
     font-size: medium;
-    margin-left: 35px;
   }
 
-  .form-container {
+  /* .form-container {
     position: relative;
     top: 10px;
     left: 10px;
     padding: 90px;
-  }
-  .navbar-mobile {
-    display: contents;
-    display: flex;
-    font-family: "fontproduct";
-    font-size: larger;
-  }
-  .form-container {
+  } */
+
+  /* .form-container {
     justify-content: right;
     padding: 10px;
     position: relative;
@@ -398,7 +488,7 @@ span {
     gap: 10px;
     bottom: 250px;
     margin-bottom: 50px;
-  }
+  } */
 }
 
 @font-face {
