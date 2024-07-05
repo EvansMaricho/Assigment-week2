@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>TAMZI</title>
 
     <link rel="stylesheet" href="index.css" />
@@ -81,11 +82,14 @@
           <input
             type="text"
             class="Cari"
-            placeholder="_________________________________________"
+            placeholder=""
           />
-          <input type="submit" class="submit" value="Submit" />
+          <i class='bx bx-search-alt-2'></i>
         </form>
       </div>
+
+
+
     </header>
     <!-- NAVBAR END -->
 
@@ -95,7 +99,7 @@
         <picture>
           <source media="(min-width:731px)" srcset="Asset/lifestyle3.jpg" />
 
-          <img class="banner-img" src="Asset/srcset2.jpg" alt="banner" />
+          <img class="banner-img" src="Asset/pexels-pixabay-414659.jpg" alt="banner" />
         </picture>
       </section>
       <section class="container-wraper">
@@ -127,32 +131,112 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="wrapper-store">
+          <div class="slide-store">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <span id="slide-4"></span>
+            
+            <div class="image-store">
+        
+              <img src="asset3/bandana.jpg" alt="bandana">
+         
+           
+              <img src="asset3/teesdecker.jpg" alt="teesdecker">
+          
+           
+              <img src="asset3/sunglasses.jpg" alt="sunglasses">
+            
+            
+              <img src="asset3/blacktotebag.jpg" alt="totebag">
+            
+    
+          </div>
+          </div>
+        
+      <div class="navigation-slide">
+        <a href="#slide-1">1</a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+
+      </div>
+    </div>
+
+
+      </section>
     </main>
 
     <!-- MAIN CONTENT END -->
 
     <!-- FOOTER -->
-    <div>
-      <span class="social-media">VISIT US ON</span>
+
+    <div class="subscribe-container">
+      <form class="subscribe-form" action="get method">
+        
+        <input type="text" class="subscribe" placeholder="Enter your email to subscribe to our newsletter">
+     <button class="join">JOIN</button>
+      </form>
     </div>
+
+
     <div>
+      <span class="social-media"></span>
+    </div>
+    <div class="container-footer">
+<div class="footer-main">
       <ul class="ul-footer">
-        <li class="li-footer"><a href="Instagram">Instagram</a></li>
-        <li class="li-footer"><a href="Pinterest">Pinterest</a></li>
-        <li class="li-footer"><a href="Facebook">Facebook</a></li>
+        <li class="li-footer"><a href="/">ABOUT</a></li>
+        <li class="li-footer"><a href="/">FAQ</a></li>
+        <li class="li-footer"><a href="/">SHIPPING</a></li>
+        <li class="li-footer"><a href="/">RETURNS</a></li>
+        <li class="li-footer"><a href="/">PRIVACY POLICY</a></li>
+        <li class="li-footer"><a href="/">ACCESSIBILITY</a></li>
+        <li class="li-footer"><a href="/">CHAT WITH US</a></li>
+        <li class="li-footer"><a href="/">WORK WITH US</a></li>
       </ul>
     </div>
+      <div class="footer-social">
+       <a href=""> <i class='bx bxl-instagram' ></i></a>
+        <a href=""><i class='bx bxl-facebook-square'></i></a>
+        <a href=""><i class='bx bxl-twitter' ></i></a>
+       <a href=""><i class='bx bxl-pinterest' ></i></a> 
+
+      </div>
+   
+  </div>
+
+
+  <div class="footer-end">
+
+    <div>
+      <button id="mybtn" onclick="darkmode()"><img src="asset3/moon-solid-60.png" alt=""></button>
+      
+     
+    </div>
+
+
+    <div class="container-currency">
+      <select name="currency" id="currency">
+        <option value="IDR" class="IDR" id="IDR">IDR Rp</option>
+        <option value="IDR" class="IDR" id="IDR">US $</option>
+        <option value="IDR" class="IDR" id="IDR">PONDS £</option>
+        <option value="IDR" class="IDR" id="IDR">YUAN ¥</option>
+        <option value="IDR" class="IDR" id="IDR">YEN ¥</option>
+      </select>
+    </div>
+
+
+  </div>
+
+
+
     <!-- FOOTER END -->
 
     <script src="main.js">
-// document.addEventListener("scroll", () => {
-//   const header = document.querySelector('header');
-//   if (window.scrollY > 0) {
-//     header.classList.add("scrolled");
-//   } else {
-//     header.classList.remove("scrolled");
-//   }
-// });
+
 
     </script>
   </body>

@@ -15,11 +15,25 @@ document.addEventListener("scroll", () => {
   }
 });
 
-const header = document.querySelector("header");
-header.addEventListener("scroll", () => {
-  if (window.scrollY > 0) {
-    header.classList.add("scrolled");
+function darkmode() {
+  var SetTheme = document.body;
+
+  SetTheme.classList.toggle("dark-mode");
+
+  if (SetTheme.classList.contains("dark-mode")) {
+    console.log("Dark mode");
+    theme = "DARK";
   } else {
-    header.classList.remove("scrolled");
+    console.log("Light mode");
+    theme = "LIGHT";
   }
-});
+
+  localStorage.setItem("PageTheme", JSON.stringify(theme));
+}
+
+let GetTheme = JSON.parse(localStorage.getItem("PageTheme"));
+console.log(GetTheme);
+
+if (GetTheme === "DARK") {
+  document.body.classList = "dark-mode";
+}
