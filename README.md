@@ -56,6 +56,7 @@ And then choose github to import your repository from github to netlify and choo
   login with your google email and click Domain on menu navbar and go to marketplace icon and choose buy domain
 
 </p>
+
 ![Screenshot (31)](https://github.com/EvansMaricho/Assigment-week2/assets/171814289/6ac7b106-c15a-4e1b-a01b-00bddf002536)
 
 <p>
@@ -88,6 +89,7 @@ after that you have complete payment.
 <P>
   and copy 4 dns name servers like on this below
 </P>
+
 ![Screenshot (42)](https://github.com/EvansMaricho/Assigment-week2/assets/171814289/f50d5765-137e-47ef-bddc-0a516b5493f3)
 
 <p>
